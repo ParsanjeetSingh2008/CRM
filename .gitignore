@@ -1,0 +1,39 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Databases ----------
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite3
+
+# ---------- Env / secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Node / frontend ----------
+node_modules/
+dist/
+.vite/
+
+# ---------- Deployment ----------
+.vercel/
+.netlify/
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# ---------- Local tool settings ----------
+.claude/

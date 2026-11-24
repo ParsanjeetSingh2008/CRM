@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens. Flat style on a white background, with one colour per meaning:
+ *   blue   = brand / primary actions / total leads
+ *   purple = "New" leads
+ *   yellow = "Contacted" leads
+ *   orange = "Converted" leads
+ */
+@theme {
+  --font-sans: 'Plus Jakarta Sans Variable', ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #0f172a;
+  --color-ink-soft: #475569;
+  --color-ink-faint: #64748b;
+  --color-line: #e2e8f0;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+
+  --color-brand: #2563eb;
+  --color-brand-hover: #1d4ed8;
+  --color-brand-soft: #eff6ff;
+
+  --color-new: #7c3aed;
+  --color-new-soft: #f5f3ff;
+  --color-contacted: #b45309; /* amber-700: readable yellow-family text */
+  --color-contacted-fill: #f59e0b; /* amber-500: bars, dots */
+  --color-contacted-soft: #fffbeb;
+  --color-converted: #c2410c; /* orange-700 */
+  --color-converted-fill: #ea580c; /* orange-600 */
+  --color-converted-soft: #fff7ed;
+
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+  --color-danger-soft: #fef2f2;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-surface font-sans text-ink antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand;
+  }
+
+  button:not(:disabled),
+  [role='button']:not(:disabled),
+  select:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

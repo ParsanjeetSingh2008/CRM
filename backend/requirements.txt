@@ -1,0 +1,2 @@
+# The package list lives at the repository root (Vercel installs from there).
+-r ../requirements.txt
