@@ -2,9 +2,10 @@
 
 A lead-tracking CRM built for the **SHL Tech Internship, Task 1 (Mini CRM Dashboard)**. Every enquiry becomes a *lead*, and you move each lead from **New → Contacted → Converted**, with live numbers, charts and an AI assistant (Clive) along the way.
 
-- **Live app:** _link added after deployment_
+- **Live app:** https://crm-sand-rho.vercel.app
+- **Source code:** https://github.com/ParsanjeetSingh2008/CRM
 - **Demo login:** click **Try the demo account** on the login screen (or `demo@kinetiq.app` / `DemoPass123`)
-- **API docs (Swagger):** `<live link>/api/docs`
+- **API docs (Swagger):** https://crm-sand-rho.vercel.app/api/docs
 
 ---
 
